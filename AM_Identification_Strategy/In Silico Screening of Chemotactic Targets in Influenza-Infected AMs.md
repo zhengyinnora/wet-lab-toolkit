@@ -13,6 +13,9 @@ To identify potential chemotactic receptors (e.g., *Fpr1/2, Cxcr4*) that are upr
 * **Scientific Justification:** Carbon Nanotube (CNT) exposure induces sterile inflammation, cell necrosis, and tissue repair requirements similar to the **post-viral injury phase** (e.g., Influenza Day 7-14).
 * **Strategic Goal:** Since steady-state AMs are "sessile" (receptor-negative), the Influenza model serves as a **Positive Control** to demonstrate that specific receptors (*Fpr1/2*) are **inducible** and biologically relevant for AM motility in a damaged environment.
 * Due to the lack of public fibrosis models with single-cell resolution, Influenza-induced lung injury serves as a biologically relevant surrogate to identify inducible chemotactic programs in AMs. The emphasis is not on replicating CNT per se, but on identifying potential receptors responsive to necrosis or inflammation.
+* While CNT exposure represents a sterile particle-induced lung injury, the public scRNA-seq datasets currently lack such models.
+Instead, we utilized Influenza-infected mouse lungs (Day 7+) as a biological surrogate to explore inducible chemotactic receptor expression in AMs under acute injury conditions.
+This model captures a similar inflammatory landscape (e.g., necrosis, DAMP release) and thus supports the hypothesis that Fpr1/2 may be induced as part of an AM-specific migratory program.
 
 #### **2. Database & Tool Configuration**
 
