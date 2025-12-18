@@ -28,6 +28,9 @@ To reproduce the analysis, use the following settings:
 * **Tissue:** Lung
 * **Disease:** **Influenza** (Must exclude "Normal" to focus on activated state).
 * **Timepoint (Optional):** Focus on Day 7+ (Repair/Resolution phase) if available.
+* [CRITICAL UPDATE] Timepoint Selection: Under sacrifice_day (validated as days post-infection via alt_sample_id), select days 11, 19, and 25.
+
+Reasoning: These timepoints represent the peak of the resolution and repair phase, providing the highest probability of capturing motile AMs, distinct from the initial viral toxicity phase (Day 0-6).
 
 
 
@@ -49,7 +52,7 @@ The following genes were selected to screen for inducible migration markers base
 
 Follow these steps to visualize the phenotype switching:
 
-1. **Initialize Dataset:** Load the **Influenza** infected mouse lung dataset.
+1. **Initialize Dataset:** Load the Influenza dataset and apply the sacrifice_day filter (11, 19, 25) to isolate the repair-phase population.
 2. **Input Gene List:** Enter `Siglecf`, `Mrc1`, `Fpr1`, `Fpr2`, `Cxcr4`, `Ccr2`, `Ccr5`.
 3. **Visualization (Color by Gene):**
 * Locate the **Siglecf+ / Mrc1+** cluster (Activated AMs).
@@ -64,7 +67,7 @@ Follow these steps to visualize the phenotype switching:
 
 #### **5. Conclusion & Translation to Wet Lab**
 
-* **In Silico Conclusion:** AMs possess an **inducible** chemotactic program. Specifically, **Fpr1/2** are upregulated in response to lung injury (Influenza), while *Ccr2/Cxcr4* remain low/negative.
+* In Silico Conclusion: AMs possess an inducible chemotactic program (specifically Fpr1/2) that is strictly activated during the tissue repair phase (Day 11-25).
 * **Hypothesis for CNT Project:** CNT-induced necrosis (mitochondrial release) likely mimics the "danger signal" landscape of Influenza, triggering the same **Fpr-dependent** motility mechanism.
 * **Action Plan:**
 * **Target:** Focus wet-lab migration assays on **FPR agonists (fMLP, WKYMVm)**.
