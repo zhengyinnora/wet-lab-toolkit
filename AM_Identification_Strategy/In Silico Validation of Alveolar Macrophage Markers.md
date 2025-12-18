@@ -11,7 +11,7 @@ To establish a reproducible gene signature for distinguishing Alveolar Macrophag
 To reproduce the analysis, use the following settings:
 
 * **Platform:** [CZI CellxGene Discovery](https://cellxgene.cziscience.com/)
-* **Mode:** Explorer (UMAP/Embedding View)
+* **Mode:** Explorer (UMAP/Embedding View) -> datasets
 * **Filters:**
     * **Organism:** *Mus musculus*
     * **Tissue:** Lung
