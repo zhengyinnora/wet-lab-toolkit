@@ -1,64 +1,74 @@
-# Protocol: In Silico Validation of Alveolar Macrophage Markers
+**Protocol: In Silico Establishment of Alveolar Macrophage Chemotaxis Baseline**
 
-**Date:** 2025-12-17
-**Author:** Nora
-**Context:** Validation of *Siglecf*-Cre/tdTomato reporter specificity.
+**Date:** 2025-12-18 **Author:** Nora
 
-## 1. Objective
-To establish a reproducible gene signature for distinguishing Alveolar Macrophages (AMs) from Eosinophils and Interstitial Macrophages (IMs) using public single-cell RNA sequencing (scRNA-seq) data. This protocol defines the gene panel used to guide wet-lab antibody selection (FACS/IF).
+**Context:** Validation of steady-state receptor expression profile to distinguish "Sessile" vs. "Migratory" Alveolar Macrophages (AMs).
 
-## 2. Database & Tool Configuration
+### 1. Objective
+
+To establish the baseline gene expression signature of chemotactic receptors (e.g., *Ccr2, Cxcr4, Fpr*) in steady-state Alveolar Macrophages (AMs) using public single-cell RNA sequencing (scRNA-seq) data. This protocol confirms the **non-migratory phenotype** of healthy AMs, serving as a negative control for subsequent CNT-induced migration studies.
+
+### 2. Database & Tool Configuration
+
 To reproduce the analysis, use the following settings:
 
 * **Platform:** [CZI CellxGene Discovery](https://cellxgene.cziscience.com/)
-* **Mode:** Explorer (UMAP/Embedding View) -> datasets
+* **Mode:** Explorer (UMAP/Embedding View) -> Datasets
 * **Filters:**
-    * **Organism:** *Mus musculus*
-    * **Tissue:** Lung
-    * **Dataset:** *Tabula Muris Senis* (or *Mouse Lung Atlas* by Angelidis et al.)
+* **Organism:** *Mus musculus*
+* **Tissue:** Lung
+* **Dataset:** *Tabula Muris Senis* (or *Mouse Lung Atlas* by Angelidis et al.) - **Must ensure dataset is "Healthy" or "Naive" (Non-fibrotic/Non-infected).**
 
-## 3. Gene Panel Selection (The "Why")
 
-The following genes were selected to construct a logical gate for AM identification.
+
+### 3. Gene Panel Selection (The "Why")
+
+The following genes were selected to construct a logical gate for AM chemotaxis potential.
 
 | Gene Symbol | Protein (CD) | Cell Type Target | Role in Strategy |
-| :--- | :--- | :--- | :--- |
-| **Itgax** | CD11c | AMs, DCs | **Baseline Marker.** Defines the broad myeloid population in the lung airspace. |
-| **Mrc1** | CD206 | AMs | **Positive Selector.** Highly specific to AMs; used to confirm *Siglecf*-Cre targets. |
-| **Fcgr1** | CD64 | Macrophages (AM + IM) | **Lineage Gate.** Distinguishes Macrophages from Dendritic Cells (DCs). |
-| **Cd68** | CD68 | Pan-Macrophage | **Broad Control.** Confirming general macrophage identity (though less specific than Mrc1). |
-| **Prg2** | - | Eosinophils | **Negative Selector.** Major Basic Protein. Used to identify the "Exclude" population. |
-| **Ccr3** | CD193 | Eosinophils | **Negative Selector.** Confirming Eosinophil identity alongside Prg2. |
+| --- | --- | --- | --- |
+| **Siglecf** | - | AMs | **Identity Marker.** The definitive marker for murine AMs; used to anchor the population of interest. |
+| **Mrc1** | CD206 | AMs (M2-like) | **Identity Marker.** Co-localization with *Siglecf* confirms the population as Resident AMs. |
+| **Ccr2** | CD192 | Monocytes | **Negative Control (Chemotaxis).** Recruitment signal. Should NOT overlap with steady-state AMs. |
+| **Cxcr4** | CD184 | Migrating Cells | **Negative Control (Chemotaxis).** Homing signal. Absence indicates "sessile" (non-moving) state. |
+| **Fpr1/2** | - | Neutrophils/Mono | **Negative Control (Chemotaxis).** Bacterial sensing. Absence indicates lack of acute activation. |
+| **C5ar1** | CD88 | Myeloid cells | **Negative Control.** Complement receptor. Low/Negative in resting AMs. |
 
-## 4. Step-by-Step Reproduction Guide
+### 4. Step-by-Step Reproduction Guide
 
-Follow these steps to visualize the cluster separation:
+Follow these steps to visualize the phenotype separation:
 
-1.  **Initialize Dataset:** Open the CZI CellxGene "Explorer" interface for the mouse lung dataset.
-2.  **Input Gene List:** In the right-hand "Genes" search bar, enter the following list:
-    * `Mrc1`
-    * `Prg2`
-    * `Itgax`
-    * `Ccr3`
-    * `Fcgr1`
-    * `Cd68`
-3.  **Visualization (Color by Gene):**
-    * Click the "droplet" icon next to **`Prg2`** -> Note the location of the Eosinophil cluster.
-    * Click the "droplet" icon next to **`Mrc1`** -> Note the location of the AM cluster.
-    * *Observation:* These two clusters should be distinct and non-overlapping.
-4.  **Co-localization Check (The Logic):**
-    * Verify that **`Itgax`** and **`Fcgr1`** overlap significantly with the `Mrc1` cluster.
-    * Verify that **`Ccr3`** strictly overlaps with the `Prg2` cluster.
+1. **Initialize Dataset:** Open the CZI CellxGene "Explorer" interface for the mouse lung dataset (Healthy).
+2. **Input Gene List:** In the right-hand "Genes" search bar, enter the following list:
+* `Siglecf`
+* `Mrc1`
+* `Ccr2`
+* `Cxcr4`
+* `Fpr1`
+* `Fpr2`
+* `C5ar1`
 
-## 5. Translation to Wet Lab (Experimental Logic)
 
-Based on the *in silico* separation observed above, the following antibody strategy is validated:
+3. **Visualization (Color by Gene):**
+* Click the "droplet" icon next to `Siglecf` -> Identify the high-expression cluster (AMs).
+* Click the "droplet" icon next to `Cxcr4` / `Ccr2` -> Note the location of these expressing cells (likely Monocytes/B cells).
 
-* **For FACS:**
-    * Gate: `CD45+` -> `Lin-` -> `CD64+` (to match *Fcgr1* expression) -> `Siglecf+` / `CD206+`.
-* **For Histology (IF):**
-    * **Primary Target:** **CD206 (Anti-Mrc1)**.
-    * **Justification:** *Mrc1* shows the cleanest separation from *Prg2*+ Eosinophils in the dataset, providing a higher signal-to-noise ratio than *Cd68* or *Fcgr1* for morphological identification.
 
----
-*Note: This analysis utilizes wild-type (WT) public data to establish the baseline phenotype. The actual reporter mouse (Cre+) should mimic the Mrc1+ population identified here.*
+4. **Co-localization Check (The Logic):**
+* **Crucial Step:** Verify that the `Siglecf` high cluster **DOES NOT** overlap with `Cxcr4` or `Ccr2` high clusters.
+* *Observation:* The AM cluster should appear "cold" (blue/grey) for chemotactic receptors.
+
+
+
+### 5. Validation of "Sessile" Baseline (Findings)
+
+Based on the *in silico* separation observed above, the following baseline is established:
+
+* **Phenotype Definition:** Steady-state AMs are defined as **Siglecf(High) / Mrc1(+) / Ccr2(-) / Cxcr4(-) / Fpr(-)**.
+* **Biological Interpretation:**
+* The lack of overlap confirms that healthy AMs are "sessile" (tissue-resident and non-migratory).
+* Any detection of these receptors in future experimental groups (e.g., CNT-treated) can be attributed to **induced activation**, not baseline expression.
+
+
+* **Experimental Implication:**
+* **For FACS:** A "Shift" in geometric mean fluorescence intensity (gMFI) for CXCR4/CCR2 on Siglecf+ cells is required to prove migration potential. The baseline gMFI should be low (comparable to FMO control).
