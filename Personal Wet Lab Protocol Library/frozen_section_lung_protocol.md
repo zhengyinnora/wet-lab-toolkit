@@ -1,253 +1,166 @@
-#experimentprotocol 
-## **Day1——lung isolation**
+# Frozen Section Preparation – Lung Tissue
 
-## **Day 2 — Dehydration（脱水 / sucrose 渗透）**
-
-### **1. Preparation of sucrose solution（蔗糖溶液配制）**
-
-**15% sucrose:**
-
-- 6 g sucrose + 40 mL 1× PBS  
-    
-- _Note:_ Add sucrose first → add ~30 mL PBS → vortex to dissolve → top up to **40 mL**.  
-    
-
-**30% sucrose:**
-
-- 12 g sucrose + 40 mL 1× PBS  
-    
-- 方法同上。  
-    
-
-> ✔ > **蔗糖必须完全溶解，不然浓度不准，会影响渗透效率。**
+**Sample type:** Mouse lung  
+**Application:** OCT embedding and cryosectioning for downstream IF staining  
+**Last updated:** 2026‑01‑07  
+**Author:** Nora
 
 ---
 
-### **2. Dehydration（组织渗透 sucrose）**
+## 🧪 Day 1 — Lung Isolation
 
-- 将足量 15% sucrose 加到 Falcon 管（约 10 mL），放入组织。  
-    
-- 标记组织信息（日期 + ID）。  
-    
-- Roller mixer **至少 24 h 或直到组织完全沉底。**  
-    
-
-然后：
-
-- 倒掉 15% → 换成 30% sucrose。  
-    
-- Roller mixer **48 h 或更久（越久渗透越足）**。  
-    
-
-> ✔ 肺组织很松软，渗透慢。  
-> **可选：检查沉底状态，组织沉到底说明渗透完成。**
+> (Standard dissection procedure not described here. Ensure tissue is clean and intact before dehydration.)
 
 ---
 
-## **Day 3 — Embedding with OCT & Freezing**
+## 💧 Day 2 — Sucrose Dehydration (Cryoprotection)
 
-### **(1) OCT embedding（包埋）**
+### 1. Preparation of Sucrose Solutions
 
-#### **OCT 简介**
+**15% Sucrose**  
+- 6 g sucrose + 40 mL 1× PBS  
+- Add sucrose first → add ~30 mL PBS → vortex → top up to 40 mL.
 
-Optimal Cutting Temperature compound  
-成分：
+**30% Sucrose**  
+- 12 g sucrose + 40 mL 1× PBS  
+- Same method as above.
 
-- PVA（polyvinyl alcohol）  
-    
-- PEG（polyethylene glycol）  
-    
-- 某些缓冲液  
-    → 冷冻后变硬，提供支撑。  
-    
+> ✅ Make sure sucrose is fully dissolved — undissolved crystals will alter the concentration and affect penetration efficiency.
 
 ---
 
-#### **步骤**
+### 2. Tissue Infiltration with Sucrose
 
-##### **① 准备材料**
+- Add enough 15% sucrose to a Falcon tube (~10 mL), submerge lung tissue.
+- Label tube with sample info (ID + date).
+- Place on roller mixer for **≥24 h or until tissue sinks**.
 
-- 小方盒（cryomold），写好组织信息  
-    
-- OCT（RT 温度更好操作）  
-    
-- 镊子  
-    
+Then:
 
-##### **② 铺底与定位**
+- Replace 15% with 30% sucrose.
+- Mix on roller for **≥48 h** (longer = better penetration).
 
-- 在方盒底部滴一层薄薄的 OCT。  
-    
-- 将组织放在 OCT 上固定，**气管面朝上**。  
-    
-- 调整姿势，使组织 **平整、舒展、不卷曲**。  
-    → 这是决定你切片切得漂不漂亮的核心。  
-    
-
-##### **③ 加满 OCT**
-
-- 慢慢从一侧注入 OCT，不要直接浇到组织上。  
-    
-- 完全淹没组织。  
-    
-- **确保组织沉底，不飘。**  
-    若组织浮起：  
-    
-- 用镊子轻压几秒直到稳定。  
-    
-
-##### **④ RT 放置 1–2 h**
-
-- 让 OCT 渗透组织内部，切出来更完整。  
-    
-
-> ✔ 你原本写得很清楚，我只是加了操作手感上的小技巧。
+> 🧠 Lung is soft and slow to sink — infiltration takes time. Sinking to the bottom indicates full saturation.
 
 ---
 
-### **(2) Freezing（冷冻）**
+## 🧊 Day 3 — Embedding with OCT & Freezing
 
-##### **① 赶气泡**
+### 1. OCT Embedding
 
-- 在 OCT 还没完全凝固前，将气泡推到**远离组织的一侧角落**。  
-    → 气泡在组织附近会产生空洞，影响切片。  
-    
+**About OCT**  
+Optimal Cutting Temperature compound – contains PVA, PEG, and buffers. Solidifies on freezing to support soft tissues.
 
-##### **② 放入干冰**
+#### Steps:
 
-- 整个 mold 放到干冰上，让其快速结冻。  
-    
-- 完全凝固通常几分钟。  
-    
+**① Prepare Materials**
+- Cryomold
+- OCT at room temperature
+- Forceps
+- Tissue label
 
-> 小提示：  
-> 如果你要极致完美，可以用 pre-chilled isopentane（–150°C）快速冻 → 冻得更均匀不裂，但干冰已经够用了。
+**② Positioning**
+- Add a thin layer of OCT to bottom of cryomold.
+- Place tissue **airway side up** on OCT.
+- Gently adjust to lay flat, avoid curling or folding.
 
----
+**③ Fill Mold**
+- Slowly add OCT from the side to avoid bubbles.
+- Fully submerge tissue.
+- Ensure tissue sinks. If it floats, gently press with forceps until stable.
 
-### **(3) Storage（存储）**
-
-- 冻硬后把小盒子放进 **–80°C** 保存。  
-    
-- 使用 cryostat 前 **提前 1–2 h 放到 –20°C 回温**，避免 block 太硬碎裂。
-
-## **Day4——Cryostat冷冻切片机的常规流程**
-
-### **1）机器开机、设温度**
-
-通常：
-
-- **chamber（大仓）温度：–20°C 左右**  
-    
-- **blade holder（刀架）温度：–18°C 到 –22°C**  
-    
-- **anti-roll plate** 也会被冷却  
-    
-
-> 肺组织一般在 –20°C 最舒服，太冷会裂，太暖会糊。
+**④ Let Sit at RT for 1–2 h**
+- Allows OCT to permeate tissue interior for better sectioning.
 
 ---
 
-### **2）Block（冻块）预冷**
+### 2. Freezing
 
-切片前把 block 从 –80°C 拿出来 → 放在 –20°C 回温 1–2 h。为什么？
+**① Remove Bubbles**
+- Push air bubbles to a corner, away from tissue, before freezing.
 
-因为：
+**② Freeze**
+- Place mold directly on dry ice.
+- Freeze completely (usually within a few minutes).
 
-- –80°C 太硬 = 刀片会碎它像冰糖  
-    
-- –20°C 让它“稍微软一点” = 切片平滑很多  
-    
-
-一般会把 block 放进 chamber 里再等几分钟，让它真正“适应环境”。
+> 💡 Pro tip: For perfect freezing, use pre-chilled isopentane (–150 °C). But dry ice works fine for most purposes.
 
 ---
 
-### **3）装 block（把 OCT 冰砖吸在刀架那）**
+### 3. Storage
 
-刀架前面有个金属圆盘叫 **chuck**。
-
-流程一般是：
-
-1. chuck 上挤一点 OCT 当“胶”
-2. 把 block 按在上面
-3. 等几秒让它冻牢
-
-这一步真正决定 **切面方向**。  
-之前那句“气管朝上”是对的，因为此时它就决定刀会怎么下。
+- Once fully frozen, store at **–80 °C**.
+- Before cryosectioning, transfer to **–20 °C for 1–2 h** to soften block slightly and reduce cracking.
 
 ---
 
-### **4）修平面（trimming）**
+## 🪓 Day 4 — Cryostat Sectioning
 
-- 把刀架调到比较厚的切片（比如 30–50 µm）  
-    
-- 快速修掉最外层的 OCT  
-    
-- 直到看到肺组织的表面  
-    
+### 1. Cryostat Setup
 
-这个叫 **trimming**。看到一片粉白色的薄薄碎屑不断掉下来，那就是修面。
+- Chamber temperature: **–20 °C**  
+- Blade holder: **–18 to –22 °C**
+
+> 💡 Lung sections crack if too cold, smear if too warm — –20 °C is ideal.
 
 ---
 
-### **5）正式切片（sectioning）**
+### 2. Block Equilibration
 
-以后会自己做的部分。
-
-通常：
-
-- 切 **5–10 µm**（IF 常用 8–10 µm）  
-    
-- 刀片滑过组织，切出的片会卷成一条小卷（ribbon）  
-    
-- **brush 小刷子**  
-    
-- 或 **镊子 + 手心的温度**  
-    
-
-把切好的一片轻轻展平。
-
-看到她手伸进去“按住一下让它躺平”的动作吗？  
-那不是美观，是避免 **皱褶、折断、裂开**。
+- Take block from –80 °C → equilibrate at –20 °C for 1–2 h.  
+- Optionally pre-equilibrate in the cryostat chamber for a few minutes.
 
 ---
 
-## **6）贴片（mounting）**
+### 3. Mounting Block to Chuck
 
-玻片（pre-cooled or RT）轻轻接触切片，让它“粘上去”。
-
-只要贴得好：
-
-- 切片会瞬间贴住玻片  
-    
-- 不会起泡  
-    
-- 不会断裂  
-    
-
-贴得不好：
-
-- 切片会卷起来、飞走、掉一半  
-    
-- IF 染色时会整片漂掉  
-    
-
-所以这一步其实比切得漂亮更重要。
+- Apply a dab of OCT on chuck.
+- Press block onto it firmly, airway side facing up.
+- Let it freeze and stabilize — this step determines section orientation.
 
 ---
 
-## **7）晾干或 37°C 烘几分钟（不同 lab 不同习惯）**
+### 4. Trimming
 
-有人：
+- Set thickness to ~30–50 µm.
+- Trim away excess OCT until lung tissue surface is visible.
+- Watch for white flaky ribbons — that’s the sign you're reaching tissue.
 
-- 放室温 air dry  
-    
-- 放 37°C oven 10 min  
-    
-- 直接放 –20°C 备用  
-    
-- 或马上开始 IF 染色  
-    
+---
 
-若储存：-80
+### 5. Sectioning
+
+- Set section thickness: **5–10 µm** (8–10 µm is common for IF).
+- Cut smoothly; section should curl into a ribbon.
+- Use a small brush or tweezers + hand warmth to flatten ribbons.
+
+---
+
+### 6. Mounting Sections
+
+- Use pre-cooled or room temp glass slide.
+- Gently touch the section to the slide to transfer.
+- A good mount = no bubbles, no tearing, clean pickup.
+
+> 💡 Poor mounting causes section loss during IF washing steps.
+
+---
+
+### 7. Drying or Storage
+
+- Options vary:
+  - Air dry at room temperature.
+  - Bake at 37 °C for 10 min.
+  - Store immediately at –20 °C or –80 °C.
+  - Proceed directly to IF staining.
+
+---
+
+## 📌 Notes
+
+- Always label blocks and slides clearly.
+- Record embedding date and lung orientation.
+- Avoid embedding too many tissues in one mold — easier to control quality.
+
+---
+
