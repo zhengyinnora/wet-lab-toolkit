@@ -22,3 +22,6 @@ This folder intentionally retains the structure of a learning archive. It is not
 - Honest notes on troubleshooting or deviations
 
 If you're reviewing this repository in the context of future collaborations, I welcome feedback or discussion.
+
+> ✍️ All protocols were drafted by me based on actual lab work.  
+> While some phrasing was later polished with AI assistance, all core content reflects my own learning and experience at the bench.
