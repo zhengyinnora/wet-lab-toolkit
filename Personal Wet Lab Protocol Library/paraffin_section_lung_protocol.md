@@ -4,7 +4,6 @@
 
 ## Day 1 — Mouse Lung Isolation & Perfusion Fixation Protocol
 
-（小鼠肺取材 & 灌流固定）
 
 ### 1. Mouse Euthanasia
 
@@ -140,7 +139,7 @@ _(To embed the dehydrated tissue in molten paraffin, allowing it to be cut into 
 
 ---
 
-## (b) Fein (Fine sectioning)
+### (3) Fein (Fine sectioning)
 
 - → **3 µm**
     
@@ -149,7 +148,7 @@ _(To embed the dehydrated tissue in molten paraffin, allowing it to be cut into 
 - Gently flatten curled ribbons using forceps if needed.  
     
 
-## (c) Spreading & Collecting
+### (4) Spreading & Collecting
 
 - Float the ribbon on **40°C** water bath to allow tissue to flatten.
     
