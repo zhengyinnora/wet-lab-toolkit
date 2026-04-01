@@ -1,27 +1,43 @@
-# readme.md
+# Wet Lab Protocol Library
 
+This folder is a curated collection of wet-lab SOPs and practical protocol notes developed through hands-on experimental work in biomedical research.
 
-Welcome to my curated collection of wet lab protocols — a growing repository built from the ground up as part of my hands-on training in experimental biomedical research. This subfolder is part of the [`wet-lab-toolkit`](../) project.
+It is part of the broader `wet-lab-toolkit` project and is intended to serve as a structured, reusable reference for routine laboratory workflows. The goal is not only to support reliable experimental repetition, but also to document the reasoning, practical adjustments, and troubleshooting that make protocols truly usable at the bench.
 
-These documents reflect my ongoing effort to document, understand, and refine each method I’ve learned — not just to reproduce experiments reliably, but to deepen my mechanistic understanding and ensure long-term reproducibility across studies.
+## What this library contains
 
-This folder includes protocols I have:
-- Learned and validated through hands-on experience  
-- Modified or annotated based on lab-specific conditions  
-- Structured for clarity and future reference
+This folder includes protocols that are:
 
+- built from hands-on laboratory practice
+- organized for clarity and future reuse
+- refined through repeated execution and note-taking
+- accompanied, where relevant, by practical cautions or troubleshooting observations
 
----
+Current topics include:
 
-## Note for Future Readers
+- cell culture
+- buffer and reagent preparation
+- genotyping
+- histology and immunostaining
+- related experimental support workflows
 
-This folder intentionally retains the structure of a learning archive. It is not meant to demonstrate perfection — but to document a continuous learning process with emphasis on:
-- Protocol reproducibility  
-- Personal interpretation of steps  
-- Adjustments based on reagent availability or tissue type  
-- Honest notes on troubleshooting or deviations
+## Philosophy
 
-If you're reviewing this repository in the context of future collaborations, I welcome feedback or discussion.
+This library is intentionally maintained as a practical working archive rather than a polished methods textbook. It emphasizes:
 
-> ✍️ All protocols were drafted by me based on actual lab work.  
-> While some phrasing was later polished with AI assistance, all core content reflects my own learning and experience at the bench.
+- reproducibility
+- stepwise clarity
+- adaptation to reagent availability or experimental context
+- honest documentation of deviations, limitations, and troubleshooting
+
+## Scope
+
+The protocols collected here are intended as generalizable SOP-style references. They do not include unpublished project-specific experimental designs, internal lab records, or proprietary workflows.
+
+Some procedures may require optimization depending on cell type, tissue source, equipment, or local laboratory practice.
+
+## For readers
+
+If you are visiting this repository for learning, adaptation, or future collaboration, I hope these materials are useful as a practical starting point.
+
+Feedback, corrections, and discussion are always welcome.
